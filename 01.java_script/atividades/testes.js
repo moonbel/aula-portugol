@@ -26,7 +26,6 @@
 
 let vitorias, empates
 let pontos
-
 //leituras 
 
 vitorias = prompt("vitórias:")
