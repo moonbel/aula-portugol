@@ -5,4 +5,4 @@ doasoesDiarias = Number(prompt("Doações diarias: "))
 
 totalDeFalta = custosMensais - doasoesDiarias
 
-alert("Total de qunato falta para completar: " + totalDeFalta)
+alert("Total de quanto falta para completar: " + totalDeFalta)
