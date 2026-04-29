@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(161, 155, 252);
+    color: rgb(37, 29, 107);
+}
+
+output{
+    color: rgb(0, 0, 0) (255, 255, 255 0.937);
+    font-family: 'sgoe UI', tahoma, Georgia, 'Times New Roman', Times, serif
+    font-size: medium; 
+}
+
+button{
+    background-color: rgb(0, 0, 0) (251, 203, 69);
+    color: rgb(1, 12, 22) (111, 10, 84, 0.937);
+    color: rgb(0, 6, 10) ( 14,47% 1.67 20.07);
+}
