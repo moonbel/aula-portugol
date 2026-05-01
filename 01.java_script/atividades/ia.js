@@ -1,31 +1,15 @@
-let toke, prompts, caracter
-let precoToken = 5, precoCaracter = 1
-let totalToken, totalCaracter, custoDinheiro
+//informações
+let preco_prompt = 5, quantidade_caracteres, preco_token, total_tokens, valor_total
 
-prompts = (prompts - 5)
+//entrada
+quantidade_caracteres = Number(prompt("Quantas carccates tem  o prompt?"))
+preco_token = Number(prompt("Qual o valor do token?"))
 
-prompts = Number(prompt("Quantos prompt  vão ser enviados: "))
+//processamento
+total_tokens = quantidade_caracteres + preco_prompt
+valor_total = preco_token * preco_token
 
-caracter = (caracter - 1)
+//saída
+console.log("O total de tokens é equivalente a: " + total_tokens) 
 
-caracter = Number(prompt("Quantos caracters vão ser enviados"))
-
-totalCaracter = (precoCaracter*caracter)
-totalToken = (totalToken*prompts) + totalToken
-
-custoDinheiro = totalToken * 0.150
-
-console.log("Esee é o preço em tokens: " + totalToken)
-console.log("\nEsse é o preço que você ira pagar: R$" + custoDinheiro)
-
-
-
-
-
-
-
-
-
-
-
-
+console.log("Esse é o valor que você ira pagar: R$")
