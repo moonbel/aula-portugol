@@ -2,7 +2,7 @@
 let preco_prompt = 5, quantidade_caracteres, preco_token, total_tokens, valor_total
 
 //entrada
-quantidade_caracteres = Number(prompt("Quantas carccates tem  o prompt?"))
+quantidade_caracteres = Number(prompt("Quantas caracteres tem  o prompt?"))
 preco_token = Number(prompt("Qual o valor do token?"))
 
 //processamento

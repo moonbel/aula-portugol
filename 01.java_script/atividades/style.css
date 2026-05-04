@@ -6,7 +6,7 @@ body{
 output{
     color: rgb(0, 0, 0) (255, 255, 255 0.937);
     font-family: 'sgoe UI', tahoma, Georgia, 'Times New Roman', Times, serif
-    font-size: medium; 
+    font-size medium; 
 }
 
 button{
