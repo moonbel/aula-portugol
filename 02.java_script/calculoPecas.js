@@ -14,5 +14,5 @@ valorUnitario = precoUnitario1 + precoUnitario2
 
 console.log("A quantidade de produtos dos setores no total é: " + valorQuantidade)
 
-console.log("\nO preço a ser pago pelos produtos no total é: " + valorUnitario)
+console.log("\nO preço a ser pago pelos produtos no total é: R$" + valorUnitario)
 
