@@ -1,16 +1,159 @@
-body{
-    background-color: rgb(161, 155, 252);
-    color: rgb(37, 29, 107);
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 3px;
 }
 
-output{
-    color: rgb(0, 0, 0) (255, 255, 255 0.937);
-    font-family: 'sgoe UI', tahoma, Georgia, 'Times New Roman', Times, serif
-    font-size medium; 
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-button{
-    background-color: rgb(0, 0, 0) (251, 203, 69);
-    color: rgb(1, 12, 22) (111, 10, 84, 0.937);
-    color: rgb(0, 6, 10) ( 14,47% 1.67 20.07);
+#logoHeader{
+    width: 150px;
+    height: 66px;
+}
+
+#divBtCategorias{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    flex: 1;
+}
+
+#divStats{
+    background-color: #000;
+    color: whitesmoke;
+    border: 1px solid #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.botao:hover, #botaoHome:hover {
+    -webkit-box-shadow: inset 0px 0px 5px 5px #DF4E39;
+    -moz-box-shadow: inset 0px 0px 5px 5px #DF4E39;
+    box-shadow: inset 0px 0px 10px 3px #DF4E39;
+
+    border-radius: 5px;
+}
+
+.linkRecurso{
+    border: 3px solid #000;
+    background-color: #DF4E39;
+    color: #000;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 6px;
+    border-radius: 10px;
+}
+.linkRecurso:hover{
+    border: 3px solid #DF4E39;
+    background-color: #000;
+    color: #DF4E39;
+
+}
+
+.botao{
+    background-color: #000;
+    color: whitesmoke;
+    border: 0px solid #000;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+#botaoHome{
+    background-color: #000;
+    color: whitesmoke;
+    border: 0px solid #000;
+    /* max-height: 70px; */
+    height: auto;
+    padding: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+
+}
+.botaoClicado{
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: #000;
+    color: whitesmoke;
+    /* border: 2px dashed whitesmoke; */
+    border: 2px dashed #DF4E39;
+}
+
+.artigo{
+    /* border: 2px solid #DF4E39; */
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:5px;
+}
+
+.artigo:hover{
+    -webkit-box-shadow: 0px 0px 14px 5px #DF4E39;
+    -moz-box-shadow: 0px 0px 14px 5px #DF4E39;
+    box-shadow: 0px 0px 14px 5px #DF4E39;
+}
+
+.tags{
+    color:#DF4E39;
+}
+
+.tagLink{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#headerContribuicoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    height: auto;
+    width: 100px;
+}
+.contribuicoesBotoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+
+}
+
+#icone{
+    color: #DF4E39;
 }
