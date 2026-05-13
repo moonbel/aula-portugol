@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Completo de Operadores JavaScript</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      text-align:center;
+      padding:50px 20px;
+      background: rgba(0,0,0,0.4);
+      box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1{
+      font-size:3rem;
+      color:#38bdf8;
+      margin-bottom:15px;
+    }
+
+    header p{
+      font-size:1.2rem;
+      max-width:800px;
+      margin:auto;
+      color:#e2e8f0;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:40px auto;
+    }
+
+    .card{
+      background: rgba(255,255,255,0.08);
+      border-radius:15px;
+      padding:30px;
+      margin-bottom:30px;
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 0 25px rgba(56,189,248,0.5);
+    }
+
+    h2{
+      color:#38bdf8;
+      margin-bottom:15px;
+      font-size:2rem;
+    }
+
+    h3{
+      color:#facc15;
+      margin-top:20px;
+      margin-bottom:10px;
+    }
+
+    p{
+      margin-bottom:10px;
+    }
+
+    ul{
+      margin-left:20px;
+      margin-bottom:15px;
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    code{
+      background:#111827;
+      color:#22c55e;
+      padding:3px 8px;
+      border-radius:5px;
+      font-size:1rem;
+    }
+
+    .example{
+      background:#0f172a;
+      padding:15px;
+      border-left:5px solid #38bdf8;
+      border-radius:8px;
+      margin-top:10px;
+      overflow-x:auto;
+    }
+
+    button{
+      background:#38bdf8;
+      color:#0f172a;
+      border:none;
+      padding:15px 25px;
+      font-size:1rem;
+      border-radius:10px;
+      cursor:pointer;
+      margin-top:20px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    button:hover{
+      background:#0ea5e9;
+      transform:scale(1.05);
+    }
+
+    #resultado{
+      margin-top:25px;
+      padding:20px;
+      background:#111827;
+      border-radius:10px;
+      border:2px solid #38bdf8;
+      display:none;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      margin-top:40px;
+      background:rgba(0,0,0,0.5);
+      color:#cbd5e1;
+    }
+
+    .highlight{
+      color:#22c55e;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>OPERADORES EM JAVASCRIPT</h1>
+    <p>
+      Aprenda de forma completa, detalhada e visualmente bonita o que são os operadores em JavaScript,
+      como eles funcionam e veja exemplos práticos funcionando em tempo real.
+    </p>
+  </header>
+
+  <div class="container">
+
+    <!-- INTRODUÇÃO -->
+    <section class="card">
+      <h2>O que são Operadores?</h2>
+
+      <p>
+        Os operadores em JavaScript são símbolos especiais usados para realizar operações
+        em valores e variáveis.
+      </p>
+
+      <p>
+        Eles são fundamentais em qualquer programa porque permitem:
+      </p>
+
+      <ul>
+        <li>Fazer cálculos matemáticos</li>
+        <li>Comparar valores</li>
+        <li>Criar condições</li>
+        <li>Tomar decisões</li>
+        <li>Manipular dados</li>
+      </ul>
+
+      <p>
+        Exemplo simples:
+      </p>
+
+      <div class="example">
+        <code>
+          let soma = 10 + 5;
+        </code>
+      </div>
+
+      <p>
+        Nesse caso:
+      </p>
+
+      <ul>
+        <li><span class="highlight">10</span> e <span class="highlight">5</span> são operandos</li>
+        <li><span class="highlight">+</span> é o operador</li>
+      </ul>
+    </section>
+
+    <!-- ARITMÉTICOS -->
+    <section class="card">
+      <h2>1. Operadores Aritméticos</h2>
+
+      <p>
+        São usados para realizar cálculos matemáticos.
+      </p>
+
+      <h3>Principais operadores:</h3>
+
+      <ul>
+        <li><code>+</code> → Soma</li>
+        <li><code>-</code> → Subtração</li>
+        <li><code>*</code> → Multiplicação</li>
+        <li><code>/</code> → Divisão</li>
+        <li><code>%</code> → Resto da divisão</li>
+        <li><code>**</code> → Potência</li>
+      </ul>
+
+      <div class="example">
+<pre>
+let a = 10;
+let b = 5;
+
+console.log(a + b); // 15
+console.log(a - b); // 5
+console.log(a * b); // 50
+console.log(a / b); // 2
+console.log(a % b); // 0
+</pre>
+      </div>
+    </section>
+
+    <!-- COMPARAÇÃO -->
+    <section class="card">
+      <h2>2. Operadores de Comparação</h2>
+
+      <p>
+        São usados para comparar valores.
+        O resultado sempre será:
+      </p>
+
+      <ul>
+        <li><span class="highlight">true</span></li>
+        <li><span class="highlight">false</span></li>
+      </ul>
+
+      <h3>Principais operadores:</h3>
+
+      <ul>
+        <li><code>==</code> → Igual</li>
+        <li><code>===</code> → Estritamente igual</li>
+        <li><code>!=</code> → Diferente</li>
+        <li><code>></code> → Maior que</li>
+        <li><code><</code> → Menor que</li>
+        <li><code>>=</code> → Maior ou igual</li>
+        <li><code><=</code> → Menor ou igual</li>
+      </ul>
+
+      <div class="example">
+<pre>
+console.log(10 > 5); // true
+console.log(10 < 5); // false
+console.log(10 == "10"); // true
+console.log(10 === "10"); // false
+</pre>
+      </div>
+    </section>
+
+    <!-- LÓGICOS -->
+    <section class="card">
+      <h2>3. Operadores Lógicos</h2>
+
+      <p>
+        Servem para combinar condições.
+      </p>
+
+      <ul>
+        <li><code>&&</code> → E lógico</li>
+        <li><code>||</code> → OU lógico</li>
+        <li><code>!</code> → NÃO lógico</li>
+      </ul>
+
+      <div class="example">
+<pre>
+let idade = 20;
+let temCarteira = true;
+
+console.log(idade >= 18 && temCarteira);
+// true
+</pre>
+      </div>
+    </section>
+
+    <!-- ATRIBUIÇÃO -->
+    <section class="card">
+      <h2>4. Operadores de Atribuição</h2>
+
+      <p>
+        Usados para atribuir valores às variáveis.
+      </p>
+
+      <ul>
+        <li><code>=</code> → Atribuição simples</li>
+        <li><code>+=</code> → Soma e atribui</li>
+        <li><code>-=</code> → Subtrai e atribui</li>
+        <li><code>*=</code> → Multiplica e atribui</li>
+      </ul>
+
+      <div class="example">
+<pre>
+let numero = 10;
+
+numero += 5;
+
+console.log(numero);
+// 15
+</pre>
+      </div>
+    </section>
+
+    <!-- INCREMENTO -->
+    <section class="card">
+      <h2>5. Incremento e Decremento</h2>
+
+      <ul>
+        <li><code>++</code> → Incrementa 1</li>
+        <li><code>--</code> → Decrementa 1</li>
+      </ul>
+
+      <div class="example">
+<pre>
+let x = 5;
+
+x++;
+
+console.log(x);
+// 6
+</pre>
+      </div>
+    </section>
+
+    <!-- EXEMPLO INTERATIVO -->
+    <section class="card">
+      <h2>Exemplo Interativo</h2>
+
+      <p>
+        Clique no botão abaixo para executar exemplos reais de operadores JavaScript.
+      </p>
+
+      <button onclick="executarExemplos()">
+        Executar Exemplos
+      </button>
+
+      <div id="resultado"></div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>
+      Projeto educativo sobre Operadores em JavaScript • HTML + CSS + JavaScript
+    </p>
+  </footer>
+
+  <script>
+
+    function executarExemplos(){
+
+      let a = 12;
+      let b = 4;
+
+      let soma = a + b;
+      let subtracao = a - b;
+      let multiplicacao = a * b;
+      let divisao = a / b;
+
+      let comparacao = a > b;
+
+      let logico = (a > 10 && b < 10);
+
+      let texto = `
+        <h2>Resultados dos Exemplos</h2>
+
+        <p><strong>Soma:</strong> ${a} + ${b} = ${soma}</p>
+
+        <p><strong>Subtração:</strong> ${a} - ${b} = ${subtracao}</p>
+
+        <p><strong>Multiplicação:</strong> ${a} × ${b} = ${multiplicacao}</p>
+
+        <p><strong>Divisão:</strong> ${a} ÷ ${b} = ${divisao}</p>
+
+        <p><strong>Comparação:</strong> ${a} > ${b} → ${comparacao}</p>
+
+        <p><strong>Operador lógico:</strong> (${a} > 10 && ${b} < 10) → ${logico}</p>
+      `;
+
+      let resultado = document.getElementById("resultado");
+
+      resultado.style.display = "block";
+
+      resultado.innerHTML = texto;
+    }
+
+  </script>
+
+</body>
+</html>
