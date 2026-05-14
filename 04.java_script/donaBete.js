@@ -1,4 +1,4 @@
-resposta.innerHTML = mensagem
+let resposta = document.getElementById('resultado')
 let totalBruto, premiacoes, presentes, comissoes, lucro
 let mensagem
 totalBruto = Number(prompt("Total bruto: "))
