@@ -1,4 +1,4 @@
-let resposta = document.getElementById('resultado')
+relatoriosPf = Number(prompt("Quantos relatorios são do pf: "))
 let totalBruto, premiacoes, presentes, comissoes, lucro
 let mensagem
 totalBruto = Number(prompt("Total bruto: "))
