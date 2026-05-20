@@ -9,4 +9,4 @@ valorTotal = (ingressos + itens)
 percentual = (lucro / gastos) * 100 
 
 console.log("O lucro que você obteve foi de: " + lucro.toFixed(2))
-console.log("\nEsse foi o lucro percentual que você obteve: %" + percentual.toFixed(2))
+console.log("\nEsse foi o lucro percentual que você obteve: %  " + percentual.toFixed(2))
