@@ -10,6 +10,33 @@
     
     <h1>Variáveis</h1>
     <hr>
+    <h2>Controle da caixa da Dessamasandro</h2>
+
+    <div class="input_venda_cliente">
+
+       <p>Digite o quanto o cliente pagou:</p>
+       <label for=""></label>
+       <input type="text" id="input_venda_cliente">
+       <button onclick="registrar_venda_cliente()">Registrar Venda</button>
+
+    </div>
+
+    <div>
+
+        <p>O cliente foi repassado de Celso?</p>
+        <label for=""></label>
+        <input type="text" id="input_desconto_celso">
+        <button onclick="registrar_desconto_celso()">Registrar Desconto</button>
+        
+    </div>
+    <hr>
+
+    <p id="valor_recebido_cliente">Valor Recebido:</p>
+    <p id="desconto_celso">Desconto de Celso:</p>
+    <p id="lucro_final_cliente">Lucro total:</p>
+
+    <hr>
+
     <h2>Aposta de Dinos</h2>
     
     <p>Digite o quanto deseja apostar:</p>
@@ -17,7 +44,8 @@
     <input id="input_aposta" type="text">
     <button onclick="registrar_aposta()">Apostar</button>
 
-    <p id="aposta_recebida">Valor a receber: R$</p>
+    <p id="aposta_recebida">Valor a receber: R$0</p>
+    <p id="resultado_final"></p>
 
     <p>Escolha seu dinossauro:</p>
 
@@ -31,6 +59,9 @@
     <button onclick="botao_parassaurolofo()">Parassaurolofo</button>
     <button onclick="botao_alossauro()">Alossauro</button>
     <button onclick="botao_carnotauro()">Carnotauro</button>
+
+    <p id="dinossauro_escolhido">Dinossauro Escolhido: </p>
+    <p id="dinossauro_sorteado">Dinossauro Sorteado: </p>
 
     <hr>
     <h2>Soma de diferentes dados</h2>
