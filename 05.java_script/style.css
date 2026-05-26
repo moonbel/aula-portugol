@@ -1,5 +1,5 @@
 body{
-    background-color: hwb(0 50% 34%);
+    background-color: hwb(234 57% 0%);
     color: lab(100% 0.01 -0.01);
     text-align: center;
 }
@@ -9,7 +9,7 @@ h1{
 }
 
 output{
-    color:  hwb(0 100% 0%);
+    color:  hwb(0 26% 57%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
     text-align: center;
@@ -17,7 +17,7 @@ output{
 }
 
 #resultado{
-    background-color: lch(0% 0 0);
+    background-color: lch(92.35% 0.01 296.81);
 }
 
 
