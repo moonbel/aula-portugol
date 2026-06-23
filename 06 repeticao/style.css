@@ -1,6 +1,6 @@
 body{
     background-color: hsl(335, 79%, 77%);
-    color: hwb(0 100% 0%);
+    color: #ffffff;
     text-align: center;
     font-size: larger;
 }
@@ -16,19 +16,20 @@ output{
 }
 
 #resultado{
-    background-color: hsl(167, 84%, 83%);
+    background-color: hwb(332 33% 34%);
 }
 
 button{
     background-color: oklab(0% 0 0);
-    color: hwb(0 100% 0%);
+    color: #ffffff;
     padding: 6px;
-    border: 1px, solid,hsl(165, 77%, 18%);
+    border: 1px, solid,#a6547a;
     font-size: large;
     font-weight:600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
 button:hover{
-    background-color: hwb(180 42% 17%);
+    background-color: #c2728c !important;
 }
