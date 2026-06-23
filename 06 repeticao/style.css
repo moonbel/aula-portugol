@@ -1,0 +1,34 @@
+body{
+    background-color: hsl(335, 79%, 77%);
+    color: hwb(0 100% 0%);
+    text-align: center;
+    font-size: larger;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+output{
+    color:  hwb(327 19% 53%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#resultado{
+    background-color: hsl(167, 84%, 83%);
+}
+
+button{
+    background-color: oklab(0% 0 0);
+    color: hwb(0 100% 0%);
+    padding: 6px;
+    border: 1px, solid,hsl(165, 77%, 18%);
+    font-size: large;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+button:hover{
+    background-color: hwb(180 42% 17%);
+}
