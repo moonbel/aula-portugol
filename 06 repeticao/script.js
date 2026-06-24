@@ -1,131 +1,101 @@
-let i = 0
-function exercicio1(){
-let contador = 0
-while(contador < 10){
-    contador++
-    alert("Ao quadrado: " + contador)
-    i = contador * contador
-    alert(i)
+function exercicio1() {
+let soma = 0;
+
+for (let i = 1; i <= 10; i++) {soma += i;
+}
+console.log(soma);
+}
+
+function exercicio2() {
+for (let i = 1; i <= 10; i++) {
+console.log(`5 x ${i} = ${5 * i}`);
 }
 }
 
-function exercicio2(){
-let contador = 11
-while(contador > 0){
-    contador--
-    alert("Valor: " + contador)
+function exercicio3() {
+for (let i = 1; i <= 10; i++) {
+console.log(i * i);
+}
+}
+function exercicio4() {
+let palavra = "JavaScript";
+for (let i = 0; i < palavra.length; i++) {
+console.log(palavra[i]);
 }
 }
 
-function exercicio3(){
-let soma = 0
-while(i < 100){
-    i++
-    soma = soma + i
-    console.log(soma);
-    alert(soma)
+function exercicio5() {
+for (let i = 1; i <= 30; i++) {
+if (i % 3 === 0) {console.log(i)}
 }
 }
 
-function exercicio4(){
-let tabuada = 5
-let contador = 0, total
-while(contador < 10){
-    contador++
-    total = tabuada * contador
-    alert(total)
+function exercicio6() {
+let resultado = "";
+for (let i = 1; i <= 10; i++) {
+resultado += "*";
+}
+console.log(resultado);
+}
+
+function exercicio7() {
+let soma = 0;
+for (let i = 2; i <= 20; i += 2) {
+soma += i;
+}
+console.log(soma);
+}
+
+function exercicio8() {
+for (let i = 0; i <= 50; i += 5) {
+console.log(i);
 }
 }
 
-function exercicio5(){
-let tabuada = 0
-let contador = 0, total
-tabuada = Number(prompt("Escreva o número que deseja: "))
-while(contador < 10){
-    contador++
-    total = tabuada * contador
-    alert(total)
+function exercicio9() {
+for (let i = 1; i <= 8; i++) {
+console.log("Olá!");
 }
 }
 
-function exercicio6(){
-    let i = 1
-while(i < 20){
-    console.log(i);
-    i+=2
+function exercicio10() {
+let soma = 0;
+for (let i = 1; i <= 15; i += 2) {
+soma += i;
+}
+console.log(soma);
+}
+
+function exercicio11() {
+let soma = 0;
+for (let i = 1; i <= 15; i += 2) {
+soma += i;
+}
+console.log(soma);
+}
+
+function exercicio12() {
+let texto = "";
+for (let i = 1; i <= 5; i++) {
+texto += i;
+console.log(texto);
 }
 }
 
-function exercicio7(){
-let contador = 11
-let contador2 = 0
-while(contador2 < 10){
-    contador2++
-    alert(contador2)
+function exercicio13() {
+let fatorial = 1;
+for (let i = 1; i <= 5; i++) {
+fatorial *= i;
 }
-while(contador > 0){
-    contador--
-    alert(contador)
-}
+console.log(fatorial);
 }
 
-function exercicio8(){
- fatorial
+function exercicio14() {
+let palavra = prompt("Digite uma palavra:");
+let contador = 0;
+
+for (let i = 0; i < palavra.length; i++) {
+if (palavra[i].toLowerCase() === "o") {contador++;}
 }
-
-function exercicio9(){
-    let contador = 0
-    while(contador < 100){
-        contador++
-        
-    if(contador%5 == 0 && contador%3 == 0){
-            alert("fizzbuzz " + contador)
-        }
-    else if(contador%3 == 0){
-        alert("fizz " + contador)
-    }
-    else if(contador%5 == 0){
-        alert("buzz " + contador)
-    }
-
-    else{
-        alert(contador)
-    }
-    }
+console.log("Quantidade de letras 'o':", contador);
 }
-
-function exercicio10(){
-    let i = 0
-    let total = 0
-    while(i < 10){
-        i++
-        total = total + (1/i)
-        alert(total)
-    }
-
-}
-
-function exercicio11(){
-    let contador = 0
-    let par = 0
-    let impar = 0 
-    let valor = 0
-    valor = Number(prompt("Quanto?"))
-    while(contador < valor){
-        contador++
-        
-    if(contador%2 == 0){
-        par++
-        alert("tem par: " + par + " em contador: " + contador)
-    }
-    else{
-        impar++
-        alert(" tem impar: " + impar + " em contador: " + contador)
-    }
-}
-}
-
-// function exercicio12(){
-//     menor e maior
-
-// }
