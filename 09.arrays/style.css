@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(335, 79%, 77%);
+    color: #ffffff;
+    text-align: center;
+    font-size: larger;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+output{
+    color:  hwb(327 19% 53%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#resultado{
+    background-color: hwb(332 33% 34%);
+}
+
+button{
+    background-color: oklab(66.632% 0.23604 0.0154);
+    color: #ffffff;
+    padding: 6px;
+    border: 1px, solid,#a6547a;
+    font-size: large;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+button:hover{
+    background-color: #c2728c !important;
+}
