@@ -4,7 +4,8 @@ let frutas = ['banana', 'maçã', 'uva']
 let amigos = ['luanna', 'erick', 'diego']
 let idades = ['17', '19', '16', '20', '21', '24']
 let alimento = ['Maçãs', 'Pão', 'Leite']
-
+let numeros = ['1', '3', '5', '7', '9']
+let pais = ['Paris', 'Londres', 'Nova York']
 
 function diasdaSemana() {
     for (let i = 0; i < dias.length; i++) {
@@ -122,22 +123,25 @@ function verificarPao() {
 }
 
 function adicionarImpares() {
-    numeros = [];
-
-    for (let i = 1; i <= 9; i += 2) {
-        numeros.push(i);
+       for (let i = 0; i < numeros.length; i++) {
+    document.getElementById("resultado").innerHTML += " "
+    document.getElementById("resultado").innerHTML += numeros[i] 
     }
-
-    document.getElementById("resultado").innerHTML = numeros;
 }
 
-
 function multiplicarPorDois() {
-
+    let resultado = [];
 
     for (let i = 0; i < numeros.length; i++) {
         resultado.push(numeros[i] * 2);
     }
 
     document.getElementById("resultado").innerHTML = resultado;
+}
+function cidades() {
+    document.getElementById("resultado").innerHTML = "";
+
+    for (let i = 0; i < pais.length; i++) {
+        document.getElementById("resultado").innerHTML += pais[i] + " ";
+    }
 }
