@@ -51,6 +51,11 @@ function testar(){
     console.log(dinos);
 }
 function mostrarTodos(){
-    alert("todos")
+    for(let i = 0; i <dinos.length; i++){
+        alert(dinos[i])
+        document.getElementById('painel-dinos').innerHTML += 
+        '<p>class "card-dino"</p>'
+        dinos[i].nome
+    }
 }
 
