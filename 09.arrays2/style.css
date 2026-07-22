@@ -1,3 +1,18 @@
+button{
+    background-color: oklab(0% 0 0);
+    color: hwb(0 100% 0%);
+    padding: 6px;
+    border: 1px, solid,lch(0% 0 0);
+    font-size: large;
+    font-weight:600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button:hover{
+    background-color: rgb(207, 75, 75);
+}
+button {
+    margin: 3px;
+}
 body{
     background-color: lab(28.55% 27.66 -19.02);
     color: hwb(0 100% 0%);
@@ -18,20 +33,4 @@ output{
 
 #resultado{
     background-color: hsl(0, 0%, 0%);
-}
-
-button{
-    background-color: oklab(0% 0 0);
-    color: hwb(0 100% 0%);
-    padding: 6px;
-    border: 1px, solid,lch(0% 0 0);
-    font-size: large;
-    font-weight:600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-button:hover{
-    background-color: rgb(207, 75, 75);
-}
-button {
-    margin: 3px;
 }

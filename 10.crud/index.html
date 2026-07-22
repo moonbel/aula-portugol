@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <title>crud</title>
+    <title>CRUD</title>
 </head>
-<body>
-    <h1>crud</h1>
-    
-    <div id="form">
-        
-     <div class="container-imputs">
-         <label for="">nome:</label>
-         <input id="input-nome" type="text">
-        </div>
-        
-        <div class="container-imputs">
-            <label for="">altura:</label>
-            <input id="input-altura" type="number">
-            
-            </div
-            
-            <div class="container-imputs">
-                <label for="">cor:</label>
-                <input id="input-cor" type="text">
-                
-            </div>
-            
-            <div class="container-imputs">
-            <label for="">custo:</label>
-                <input id="input-custo" type="number">
-                <button onclick="cadastrarDino()">Cadastrar</button>
-            </div>
-        </div>
-        
-    <hr><hr>
-        <button onclick="testar()">teste</button>
-        <button onclick="mostrarTodos()">Mostrar todos os dinos</button>
-    <hr>
 
-    <div id="painel-Dinos">
-        
+<body>
+    <div class="form">
+        <div class="container-inputs">
+            <label for="">id</label>
+            <input type="text" id="input-id">
+        </div>
+        <div class="container-inputs">
+            <label for="">Nome</label>
+            <input type="text" id="input-nome">
+        </div>
+        <div class="container-inputs">
+            <label for="">Altura</label>
+            <input type="number" id="input-altura">
+        </div>
+        <div class="container-inputs">
+            <label for="">Cor</label>
+            <input type="text" id="input-cor">
+        </div>
+        <div class="container-inputs">
+            <label for="">Custo</label>
+            <input type="number" id="input-custo">
+        </div>
+        <div class="btn">
+            <button onclick="adicionardinos()" class="btn-comprar">Adicionar dino</button>
+            <button onclick="mostrardinos()" class="btn-comprar">Mostrar dinos</button>
+            <button onclick="removerdino()" class="btn-comprar">Remover dino</button>
+            <button onclick="procurarDino()" class="btn-comprar">Procurar dino</button>
+            <button onclick="altdino()" class="btn-comprar">Alterar dino</button>
+        </div>
+        <p id="m-d"></p>
     </div>
-    
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
